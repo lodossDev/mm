@@ -1,4 +1,4 @@
 # mm
 
-run script using:
+run script using:  
 npm run mm
