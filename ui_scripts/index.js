@@ -46,7 +46,7 @@ async function call() {
         await page.evaluate(selector => selector.parentNode.removeChild(selector), appChat[0]);
         console.log('removed app-chat.');
 
-        //lets now try to press favourite buttom.
+        //lets now try to press favourite button.
         console.log('looking for favourite btn.');        
         await page.waitForXPath(DEX_BOOKMARK_BTN, {timeout: 60000});
         const bookmark = await page.$x(DEX_BOOKMARK_BTN);
